@@ -29,7 +29,7 @@ export default function FoldersScreen({ navigation }) {
   async function deleteFolder(id) {
   const confirmed =
     Platform.OS === "web"
-      ? window.confirm("Delete folder? All notes inside will be deleted.")
+      ? window.confirm("Delete folder? All notes inside the folder will be deleted.")
       : await new Promise((resolve) =>
           Alert.alert(
             "Delete folder?",
