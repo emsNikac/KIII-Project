@@ -27,6 +27,7 @@ jobs:
         with:
           context: ./frontend
           push: true
+          platforms: linux/amd64,linux/arm64
           tags: |
             emsnikac/notes-frontend:latest
             emsnikac/notes-frontend:${{ github.sha }}
